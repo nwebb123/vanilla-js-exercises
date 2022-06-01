@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Vanilla JS Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Vanilla JS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ======= Hero Section ======= -->
+    <main>
+        <section id="hero">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6 ">
+                        <img src="assets/imgs/js_logo.png" class="d-block mx-lg-auto img-fluid text-center"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <h1 class="fw-bolder p-3">Vanilla JS Portfolio</h1>
+                        <!-- <p class="lead">
+                    </p> -->
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-outline-warning btn-lg px-4 me-md-2">Demo</button>
+                            <button type="button" class="btn btn-outline-warning btn-lg px-4">About</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="challenges">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h1 class="text-center">Challenges</h1>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Challenge 1 START -->
+            <div class="container p-2 m-2">
+                <div class="col-12 pt-3">
+
+                    <h2 class="text-center">Challenge 1)</h2>
+
+                    <p class="lead">Mark and John are trying to compare their BMI (Body Mass Index), which is calculated
+                        using the formula: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in
+                        meter).</p>
+
+                    <p class="lead text-center">Test Data:</p>
+
+                    <ul>
+                        <li>Marks weighs 78kg and is 1.69m tall.</li>
+                        <li>John weighs 92kg and is 1.95m tall.</li>
+                    </ul>
+
+                    <div class="text-center">
+                        <h5 id="bmiOfMark"></h5>
+                        <h5 id="bmiOfJohn"></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Challenge 1 END -->
+
+            <!-- Challenge 2 START -->
+            <div class="container p-2 m-2">
+                <div class="col-12 pt-3">
+
+                    <h2 class="text-center">Challenge 2)</h2>
+
+                    <p class="lead">Using the data from Challenge 1, display who has a higher BMI. The message is either
+                        "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"</p>
+
+                    <!-- <p class="lead text-center">Tasks:</p>
+
+                    <ol>
+                        <li></li>
+                        <li>Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"</li>
+                    </ol> -->
+
+                    <div class="text-center">
+                        <h5 id="whoHasHigherBMI"></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Challenge 2 END -->
+
+            <!-- Challenge 3 START -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="col">
+                        <h2 class="text-center">Challenge 3)</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p class="lead">In the game of golf each hole has a par, meaning the average number of strokes a
+                            golfer is expected to make on a particular hole. Depending on how far above or below par
+                            your strokes are, display the correct nickname.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center">Tasks:</p>
+                        <p class="lead">Given a <em>par</em> and <em>strokes</em> value (Par and strokes will always be
+                            numeric and positive), return the correct nickname according to the table below.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <table class="table table-responsive text-white">
+                            <thead>
+                                <tr>
+                                    <td>Strokes</td>
+                                    <td>Return</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>"Hole-in-one!"</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <= par - 2</td> <td>"Eagle"
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>par - 1</td>
+                                    <td>"Birdie"</td>
+                                </tr>
+                                <tr>
+                                    <td>par</td>
+                                    <td>"Par"</td>
+                                </tr>
+                                <tr>
+                                    <td>par + 1</td>
+                                    <td>"Bogey"</td>
+                                </tr>
+                                <tr>
+                                    <td>par + 2</td>
+                                    <td>"Double Bogey"</td>
+                                </tr>
+                                <tr>
+                                    <td>>= par + 3</td>
+                                    <td>"Go Home!"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <!-- User Inputs -->
+                        <p>Par: </p>
+                        <input type="number" id="parUserInput" /><br />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <p>Strokes: </p>
+                        <input type="number" id="strokesUserInput" />
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row p-2">
+                    <div class="col-sm-1">
+                        <!--Equals Button-->
+                        <button onclick="golfScoreNickname()">=</button>
+                    </div>
+                </div>
+
+
+
+                <!--Results-->
+                <div class="col">
+                    <p class="lead text-center">Results:</p>
+                    <h5 id="userScoreNickname"></h5>
+                </div>
+
+            </div>
+
+            </div>
+
+
+            <!-- Challenge 3 END -->
+
+
+        </section>
+
+        <footer class="py-3">
+
+        </footer>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="assets/site.js"></script>
+    <script src="assets/Challenges/challengesPartOne.js"></script>
+</body>
+
+</html>
